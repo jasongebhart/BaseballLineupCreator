@@ -1,49 +1,22 @@
 # Baseball Lineup Generator
 
-## Project Structure
+# Project Structure
 
-- `BaseballLineupGenerator/`: The project code container.
+- `GeneratedLineups/`: Generated output directory for code results.
+  - `Year_Season_TeamName/`: Customized code location.
+    - `Data/`: Data files used for customization.
+    - `Scripts/`: Scripts for launching various lineup tasks.
 
-- `GeneratedLineups/`: The result of the code with be created here.
-  - `Year_Season_TeamName/`: Location for your customized code.
-    - `Data/`
-      - `baseball.config.json`: Configuration file for baseball.
-      - `dugout.xml`: XML file containing dugout information.
-      - `Lineup - Copy.xml`: Copy of the lineup XML file.
-      - `Lineup.xml`: XML file containing lineup information.
-      - `pitchers.xml`: XML file containing information about pitchers.
-      - `positions.xml`: XML file containing information about player positions.
-      - `roster.xml`: XML file containing the team roster.
-      - `schedule.csv`: CSV file containing the schedule.
-    - `Scripts/`
-      - `GetLineup.lnk`: Shortcut link to the GetLineup script.
-      - `New-Lineup_Launcher.ps1`: PowerShell script for launching the New Lineup.
-      - `Print-ToHTMLLineup.lnk`: Shortcut link to the script for printing lineup to HTML.
-      - `Set-Lineup_Launcher.ps1`: PowerShell script for launching the Set Lineup.
-        
-- `Modules/`: Contains Modules
-  - `BaseballLineup/`: Module folder for the baseball module.
-    - `BaseballLineup.psd1`
-    - `BaseballLineup.psm1`
-  - `HTMLBaseballLineup/`: Module folder for the HTMLBaseball module.
-    - `HTMLBaseballLineup.psd1`
-    - `HTMLBaseballLineup.psm1`
- 
-- `Scripts/`: Folder for helper scripts.
-  - `Set-Lineup.ps1`: Control file for setting the lineup.
-  - `New-HTMLGameDetailFromXML.ps1`: Control file for generating HTML game details from XML data.
- 
-- `Styles/`: Folder for CSS files.
-  - `style.css`: CSS file for styling the HTML output.
-    
-- `Tests/`: Folder for Pester tests.
-  - `Get-BaseballConfig.Tests.ps1`: Test file for the `Get-BaseballConfig` function.
-  - `Get-Dugout.Tests.ps1`: Test file for the `Get-Dugout` function.
-  - `Get-GameInfoFromCSV.Tests.ps1`: Test file for the `Get-GameInfoFromCSV` function.
-  - `Get-PitcherOfInning.Tests.ps1`: Test file for the `Get-PitcherOfInning` function.
-  - `Get-Pitchers.Tests.ps1`: Test file for the `Get-Pitchers` function.
-  - `Get-Positions.Tests.ps1`: Test file for the `Get-Positions` function.
-  - `Get-Roster.Tests.ps1`: Test file for the `Get-Roster` function.
+- `Modules/`: Contains PowerShell modules for baseball management.
+  - `BaseballLineup/`: Module for managing baseball-related functionalities.
+  - `HTMLBaseballLineup/`: Module for generating HTML output related to baseball games.
+
+- `Scripts/`: Folder for helper scripts and control files.
+- `Styles/`: Folder for CSS files used in HTML output.
+- `Tests/`: Folder for Pester tests to validate module functionality.
+
+Feel free to explore the folders and files to learn more about each component's functionality.
+
 
 ## Description
 
