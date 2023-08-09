@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<dugout> 
+<jobs>
+    <ThirdBaseCoach>Jack</ThirdBaseCoach>
+    <FirstBaseCoach>John</FirstBaseCoach>
+    <PitchCounterOne>Sue</PitchCounterOne>
+    <PitchCounterTwo>Sam</PitchCounterTwo>
+    <LineupCoach>Ted</LineupCoach>
+    <BallsStrikesOutsCoach>Olivia</BallsStrikesOutsCoach>
+    <ScoreKeeper>Sara</ScoreKeeper>
+</jobs>
+</dugout>

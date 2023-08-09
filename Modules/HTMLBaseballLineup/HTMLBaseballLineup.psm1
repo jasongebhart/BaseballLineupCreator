@@ -10,7 +10,7 @@
 Set-HTML -GameDetail $GameDetail
 
 .Notes
-File: HTMLBaseball.psm1
+File: HTMLBaseballLineup.psm1
 Date: August 8, 2023
 #>
 # Functions

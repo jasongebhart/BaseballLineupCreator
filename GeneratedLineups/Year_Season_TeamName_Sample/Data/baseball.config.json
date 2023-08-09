@@ -1,0 +1,80 @@
+[
+    {
+        "Name":  "Left Field",
+        "Value":  1,
+        "Frequency":  10,
+        "Number":  7
+    },
+    {
+        "Name":  "Center Field",
+        "Value":  1.2,
+        "Frequency":  10,
+        "Number":  8
+    },
+    {
+        "Name":  "Right Field",
+        "Value":  0.9, 
+        "Frequency":  10,
+        "Number":  9
+    },
+    {
+        "Name":  "Pitcher",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  1
+    },
+    {
+        "Name":  "Catcher",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  2
+    },
+    {
+        "Name":  "First Base",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  3
+    },
+    {
+        "Name":  "Second Base",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  4
+    },
+    {
+        "Name":  "Short Stop",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  6
+    },
+    {
+        "Name":  "Third Base",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  5
+    },
+    {
+        "Name":  "Bench One",
+        "Value":  0,
+        "Frequency":  10,
+        "Number":  10
+    },
+    {
+        "Name":  "Bench Two",
+        "Value":  0,
+        "Frequency":  10,
+        "Number":  11
+    },
+    {
+        "Name":  "Bench Three",
+        "Value":  0,
+        "Frequency":  10,
+        "Number":  12
+    },
+    {
+        "Name":  "Bench Four",
+        "Value":  0,
+        "Frequency":  10,
+        "Number":  13
+    }
+]

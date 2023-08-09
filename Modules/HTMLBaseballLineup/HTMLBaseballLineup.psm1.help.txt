@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Module Name: HTMLBaseball
+Module Name: HTMLBaseballLineup
 Author: Jason Gebhart
 
 .DESCRIPTION
@@ -59,7 +59,7 @@ This module provides functions to generate HTML content for creating web page th
 .EXAMPLE
 
 # Import the module
-Import-Module HTMLBaseball
+Import-Module HTMLBaseballLineup
 
 # Define game details
 $GameDetail = @{
@@ -94,7 +94,7 @@ $GameDetail = @{
 Set-HTML -GameDetail $GameDetail
 
 .NOTES
-File: HTMLBaseball.psm1
+File: HTMLBaseballLineup.psm1
 Date: August 8, 2023
 
 #>
