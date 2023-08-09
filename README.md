@@ -31,8 +31,6 @@ The `Tests/` directory includes Pester tests designed to validate the functional
 
 Feel free to delve into the individual folders and files to gain insights into the distinct functionalities of each component.
 
-This version provides a clear distinction between the project's structure and its description, making it easier for readers to understand the organization of your project and its intended functionalities.
-
 # Baseball Functions
 
 ## Get-BaseballConfig
