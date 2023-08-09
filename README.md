@@ -37,7 +37,11 @@ To use this project, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Explore the project structure to familiarize yourself with the organization.
-3. Customize the data and scripts in the `GeneratedLineups/Year_Season_TeamName/` directory for your specific needs.
+3. Copy the folder `GeneratedLineups/Year_Season_TeamName/` to `GeneratedLineups/your_team/`
+3. Customize the data files in the `GeneratedLineups/your_team/data` directory for your specific needs.
+    1. pitchers.xml
+    2. roster.xml
+    3. schedule.csv
 4. Use the provided functions and modules to generate lineups and game details.
 5. Modify CSS styles in the `Styles/` directory to customize the appearance of your HTML output.
 
