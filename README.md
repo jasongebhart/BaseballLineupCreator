@@ -31,6 +31,18 @@ The `Tests/` directory includes Pester tests designed to validate the functional
 
 Feel free to delve into the individual folders and files to gain insights into the distinct functionalities of each component.
 
+## Getting Started
+
+To use this project, follow these steps:
+
+1. Clone the repository to your local machine.
+2. Explore the project structure to familiarize yourself with the organization.
+3. Customize the data and scripts in the `GeneratedLineups/Year_Season_TeamName/` directory for your specific needs.
+4. Use the provided functions and modules to generate lineups and game details.
+5. Modify CSS styles in the `Styles/` directory to customize the appearance of your HTML output.
+
+For more detailed information about each function's usage and parameters, refer to the individual module folders and the respective function documentation.
+
 # Baseball Functions
 
 ## Get-BaseballConfig
