@@ -47,6 +47,9 @@ To use this project, follow these steps:
 
 For more detailed information about each function's usage and parameters, refer to the individual module folders and the respective function documentation.
 
+## Modifying the Lineup
+You will often want to change the lineup that was generated. To do this you can edite the lineup.xml (`GeneratedLineups/your_team/lineup.xml`) file directly. Then launc this script, New-HTMLLineupFromXML.ps1, from the `Scripts` directory within `GeneratedLineups/your_team/`.
+
 # Baseball Functions
 
 ## Get-BaseballConfig
