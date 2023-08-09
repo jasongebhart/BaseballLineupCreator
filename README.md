@@ -2,7 +2,7 @@
 
 ## Project Structure
 
-- `Baseball_code/`: The project code container.
+- `BaseballLineupGenerator/`: The project code container.
   - `Set-Lineup.ps1`: Control file for setting the lineup.
   - `New-HTMLGameDetailFromXML.ps1`: Control file for generating HTML game details from XML data.
   - `style.css`: CSS file for styling the HTML output.
