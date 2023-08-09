@@ -14,9 +14,14 @@
 #>
 [cmdletbinding()]
 param ()
-
-$grandparentDirectory = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
+# Move up two levels to reach the GeneratedLineups directory
+# Get the path of the GeneratedLineups directory without changing the current directory
+$generatedLineupsPath = Convert-Path ..\..\
 $teamdir = Split-Path $PSScriptRoot -Parent
+$projectDirectory = Split-Path $generatedLineupsPath -Parent
+# Display verbose messages for clarity
+Write-Verbose "[$($MyInvocation.MyCommand)] - generatedLineupsPath: $generatedLineupsPath"
+Write-Verbose "[$($MyInvocation.MyCommand)] - teamdir: $teamdir"
 
 $parameters = @{
     teamdir = $teamdir
@@ -24,7 +29,7 @@ $parameters = @{
     LineupMethod = 'Random' # Valid values: 'Random', 'TotalValue', 'Bench', 'Assigned'
 }
 
-$lineupScriptPath = Join-Path $grandparentDirectory 'Baseball_Code\Set-Lineup.ps1'
+$lineupScriptPath = Join-Path $projectDirectory 'Scripts\Set-Lineup.ps1'
 & $lineupScriptPath @parameters -verbose
 
 Set-Location $teamdir

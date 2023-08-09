@@ -15,16 +15,17 @@
 [cmdletbinding()]
 param ()
 
-# Determine paths
-$grandparentDirectory = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
-$teamdir = Split-Path -Parent $PSScriptRoot
-
+# Move up two levels to reach the GeneratedLineups directory
+# Get the path of the GeneratedLineups directory without changing the current directory
+$generatedLineupsPath = Convert-Path ..\..\
+$teamdir = Split-Path $PSScriptRoot -Parent
+$projectDirectory = Split-Path $generatedLineupsPath -Parent
 # Display verbose messages for clarity
-Write-Verbose "[$($MyInvocation.MyCommand)] - grandparentDirectory: $grandparentDirectory"
+Write-Verbose "[$($MyInvocation.MyCommand)] - generatedLineupsPath: $generatedLineupsPath"
 Write-Verbose "[$($MyInvocation.MyCommand)] - teamdir: $teamdir"
-
 # Define paths to script and XML file
-$gameDetailScriptPath = Join-Path $grandparentDirectory 'Baseball_Code\New-HTMLGameDetailFromXML.ps1'
+
+$gameDetailScriptPath = Join-Path $projectDirectory 'Scripts\\New-HTMLGameDetailFromXML.ps1'
 $xmlFilePath = Join-Path -Path $teamdir -ChildPath 'Lineup.xml'
 
 # Check if the required script and folder exist

@@ -21,12 +21,11 @@ try {
     $ScriptRoot = if ($null -ne $PSScriptRoot) { $PSScriptRoot } else { ".\" }
 
     Write-Verbose -Message "[$($MyInvocation.MyCommand)] - team path $TeamPath" 
-    Set-Location $ScriptRoot 
-    Get-Module Baseball -ErrorAction SilentlyContinue | Remove-Module
-    Get-Module HTMLBaseball -ErrorAction SilentlyContinue | Remove-Module
-
-    Import-Module -Name "$ScriptRoot\baseball" -Global -Force -ErrorAction Stop
-    Import-Module -Name "$ScriptRoot\HTMLBaseball" -Global -Force -ErrorAction Stop
+    #Set-Location $ScriptRoot 
+    Get-Module BaseballLineup | Remove-Module
+    Get-Module HTMLBaseballLineup | Remove-Module
+    Import-Module -Name "$ScriptRoot\..\Modules\BaseballLineup" -Verbose -Global -Force -ErrorAction Stop
+    Import-Module -Name "$ScriptRoot\..\Modules\HTMLBaseballLineup" -Verbose -Global -Force -ErrorAction Stop
 
     Write-Verbose -Message "[$($MyInvocation.MyCommand)] Load the XML data using Get-Content and cast it to an XML document"
     Write-Verbose -Message "[$($MyInvocation.MyCommand)] XML $TeamPath\Lineup.xml"

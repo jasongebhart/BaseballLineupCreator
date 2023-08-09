@@ -36,11 +36,11 @@ $LineupMethod = 'TotalValue'
 $ScriptRoot = if ($null -ne $PSScriptRoot) { $PSScriptRoot } else { ".\" }
 
 # Rest of the code remains the same
-Set-Location $ScriptRoot 
-Get-Module Baseball | Remove-Module
-Get-Module HTMLBaseball | Remove-Module
-Import-Module -Name "$ScriptRoot\baseball" -Verbose -Global -Force -ErrorAction Stop
-Import-Module -Name "$ScriptRoot\HTMLBaseball" -Verbose -Global -Force -ErrorAction Stop
+#Set-Location $ScriptRoot 
+Get-Module BaseballLineup | Remove-Module
+Get-Module HTMLBaseballLineup | Remove-Module
+Import-Module -Name "$ScriptRoot\..\Modules\BaseballLineup" -Verbose -Global -Force -ErrorAction Stop
+Import-Module -Name "$ScriptRoot\..\Modules\HTMLBaseballLineup" -Verbose -Global -Force -ErrorAction Stop
 
 If (-not($TeamDir)){
     $TeamDir = "$(Split-Path $ScriptRoot -Parent)\Year_Season_TeamName_Sample"
@@ -52,7 +52,7 @@ $PitcherXML = "$TeamDir\Data\pitchers.xml"
 $PositionXML = "$TeamDir\Data\positions.xml"
 $schedulecsv= "$TeamDir\Data\schedule.csv"
 $dugoutxml = "$TeamDir\Data\dugout.xml"
-$css = "$ScriptRoot\style.css"
+$css = "$ScriptRoot\..\Styles\style.css"
 $BaseballPositionsJSON = "$TeamDir\Data\baseball.config.json"
 
 $BaseballPositions = Get-BaseballConfig -Baseballconfig $BaseballPositionsJSON
