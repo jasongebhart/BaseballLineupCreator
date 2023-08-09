@@ -1,0 +1,100 @@
+<#
+.SYNOPSIS
+Module Name: HTMLBaseball
+Author: Jason Gebhart
+
+.DESCRIPTION
+This module provides functions to generate HTML content for creating web page that displays lineup detail for baseball. It includes functions for creating HTML headers, menus, footers, and other elements commonly found in web pages.
+
+.FUNCTIONS
+
+1. New-HTMLHead
+    Creates an HTML head section including meta charset, title, and custom CSS.
+
+2. Get-CSS
+    Retrieves the content of a CSS file from a specified path.
+
+3. New-HTMLHeaderTitle
+    Creates an HTML header title element, optionally including a second-level title.
+
+4. New-HTMLHeader
+    Creates an HTML header element, optionally including navigation content.
+
+5. New-MenuBar
+    Creates an HTML menu bar element with specified content and optional ID.
+
+6. New-HTMLFooter
+    Creates an HTML footer element with copyright information and a "Top" link.
+
+7. New-HTMLEnd
+    Generates the closing tags for an HTML document.
+
+8. New-HTMLGameDay
+    Creates an HTML section for displaying game information, such as date, location, and time.
+
+9. New-HTMLRuns
+    Creates an HTML table for displaying run information for a game.
+
+10. New-HTMLDugOutWhileBatting
+    Creates an HTML section for displaying dugout roles while the team is at bat.
+    
+11. New-HTMLDugOutWhilefielding
+    Creates an HTML section for displaying dugout roles while the team is fielding.
+    
+12. New-HTMLDugOutDuties
+    Combines the HTML sections for dugout roles while batting and fielding.
+    
+13. New-HTMLLineup
+    Creates an HTML table for displaying the team lineup for different innings.
+    
+14. New-LastOut
+    Creates an HTML section for displaying the last out of the game.
+    
+15. New-LastOutAlternative
+    Creates an alternative HTML section for displaying the last out of the game.
+    
+16. Set-HTML
+    Generates an HTML page for displaying game information, lineup, runs, and dugout duties.
+
+.EXAMPLE
+
+# Import the module
+Import-Module HTMLBaseball
+
+# Define game details
+$GameDetail = @{
+    css = "path\to\custom.css"
+    Teamname = "Team A"
+    GameInfo = @{
+        GameDate = "2023-08-06"
+        Location = "Stadium"
+        StartTime = "3:00 PM"
+        Awayteam = "Opponent Team"
+        Hometeam = "Team A"
+    }
+    DugoutJobs = @{
+        LineupCoach = "Coach A"
+        ThirdBaseCoach = "Coach B"
+        FirstBaseCoach = "Coach C"
+        PitchCounterOne = "Pitch Counter 1"
+        PitchCounterTwo = "Pitch Counter 2"
+        BallsStrikesOutsCoach = "Balls, Strikes, and Outs Coach"
+        ScoreKeeper = "Score Keeper"
+    }
+    NewLineup = @(
+        [PSCustomObject]@{
+            Number = 1; Name = "Player 1"; Inning1 = "SS"; Inning2 = "1B"; Inning3 = "2B"; Inning4 = "3B"; Inning5 = "C"; Inning6 = "P"
+        }
+        # ... Other lineup entries
+    )
+    TeamDir = "C:\Teams"
+}
+
+# Generate and display the HTML page
+Set-HTML -GameDetail $GameDetail
+
+.NOTES
+File: HTMLBaseball.psm1
+Date: August 8, 2023
+
+#>

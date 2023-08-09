@@ -1,0 +1,235 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -mox-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+    height: auto !important;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+    font-size: 62.5%;
+    background-color: #e0e0e0;
+    background: #f2f2f2;
+    color: #222;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Helvetica Neue', Helvetica, Arial, Sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    height: auto !important;
+    height: 100%;
+    line-height: 1.2em;
+    min-height: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: none;
+}
+
+table td {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+table th {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+tr:nth-last-child(odd) {
+    background: #F2F2F2;
+}
+
+tr:nth-child(even) {
+    background: #E5E5E5;
+}
+
+div#header-title {
+    width: 30%;
+    float: center;
+}
+
+div#header-title>h1 {
+    font-size: 2em;
+    line-height: 1.0em;
+    float: none;
+}
+
+div#header-title>h2 {
+    font-size: 1.7em;
+    line-height: 1.0em;
+    float: none;
+}
+
+div#game-info {
+    width: 30%;
+    float: right;
+    font-size: 1.25em;
+}
+
+div#game-info>td {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+div#game-info>ul>li {
+    width: 15%;
+    float: none;
+    list-style: none;
+}
+
+div#game-lineup {
+    margin: .75em;
+    float: left;
+    font-size: .95em;
+}
+
+div#game-lineup .hitresult {
+    position: relative;
+    bottom: 0.5em;
+    color: red;
+    font-size: 0.5em;
+    vertical-align: middle;
+    width: 40px;
+}
+
+div#game-runs {
+    margin: 1em;
+    width: 60%;
+    float: left;
+}
+
+div#game-runs>td {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+}
+
+div#game-runs>table td {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    font-size: 1.50em;
+    line-height: 1.50em;
+}
+
+div#game-runs>table th {
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    font-size: 1.75em;
+    line-height: 1.750em;
+}
+
+div#game-dugout {
+    margin: 1em;
+    float: left;
+    font-size: .95em;
+    width: 100%;
+}
+
+div#game-batting {
+    margin: 1em;
+    width: 40%;
+    float: left;
+    font-size: 1.10em;
+}
+
+div#game-batting>td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+div#game-batting>table td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 1.10em;
+    line-height: 1.0em;
+}
+
+div#game-fielding {
+    margin: 1em;
+    width: 40%;
+    float: right;
+    font-size: 1.10em;
+}
+
+div#game-fielding>td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+div#game-fielding>table td {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 1.10em;
+    line-height: 1.0em;
+}
+
+div#lastout {
+    width: 40%;
+    float: right;
+}
+
+div#home-team {
+    width: 40%;
+    float: right;
+}
+
+aside {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.hitresult {
+    position: relative;
+    bottom: 0.5em;
+    color: red;
+    font-size: 0.3em;
+}
+.bench {
+    position: relative;
+    color: rgb(104, 96, 96);
+    font-size: 1.5em;
+}
+.catcher {
+    position: relative;
+    background-color:rgb(134, 236, 134);
+}
+.pitcher {
+    position: relative;
+    background-color:rgb(255, 255, 128);
+}
