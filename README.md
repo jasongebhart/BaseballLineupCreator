@@ -47,8 +47,21 @@ To use this project, follow these steps:
 
 For more detailed information about each function's usage and parameters, refer to the individual module folders and the respective function documentation.
 
-## Modifying the Lineup
-You will often want to change the lineup that was generated. To do this you can edit the Lineup.xml (`GeneratedLineups/your_team/Lineup.xml`) file directly. Then launch this script, New-HTMLLineupFromXML.ps1, from the `Scripts` directory within `GeneratedLineups/your_team/`. A new html file will be created.
+Your explanation is clear and concise, but you could provide a bit more context and guidance. Here's a slightly expanded version with additional information:
+
+**Modifying the Lineup**
+
+There might be situations where you need to make adjustments to a generated lineup. Fortunately, this process is straightforward. Follow these steps to modify the lineup and generate an updated HTML representation:
+
+1. Locate the `Lineup.xml` file: This file can be found in the `GeneratedLineups/your_team/` directory. It contains the current lineup data that you wish to modify.
+
+2. Edit the `Lineup.xml` file: Open the `Lineup.xml` file using a text editor of your choice. Make the necessary changes to the lineup, such as reordering players or adjusting positions. Save the file after making your modifications.
+
+3. Launch the `New-HTMLLineupFromXML.ps1` script: Navigate to the `Scripts` directory within `GeneratedLineups/your_team/`. Run the `New-HTMLLineupFromXML.ps1` PowerShell script. This script takes the modified `Lineup.xml` file as input and generates a new HTML file.
+
+4. Check the generated HTML file: Once the script completes, you'll find a new HTML file representing the updated lineup. This HTML file will be located in the same `GeneratedLineups/your_team/` directory. You can open this HTML file in a web browser to view the changes you made.
+
+By following these steps, you can easily customize and update the lineup to meet your specific needs. Experiment and make adjustments as necessary to create the desired lineup configuration.
 
 # Baseball Functions
 
