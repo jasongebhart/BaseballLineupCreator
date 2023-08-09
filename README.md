@@ -15,22 +15,23 @@
 - `Styles/`: Folder for CSS files used in HTML output.
 - `Tests/`: Folder for Pester tests to validate module functionality.
 
-Feel free to explore the folders and files to learn more about each component's functionality.
+Explore these folders to learn more about each component's role and functionality.
 
+# Description
 
-## Description
+This project offers a collection of PowerShell scripts and modules designed to generate baseball lineups and game details in the form of an HTML web page, specifically designed for one-page printing. The project is structured as follows:
 
-This project contains a collection of PowerShell scripts and modules related to baseball management and generating HTML game details. The project is structured as follows:
+- The `Scripts/` directory houses the main control files for setting the lineup and generating HTML game details.
 
-- The `Baseball_code/` directory holds the main control files for setting the lineup and generating HTML game details.
+- The `BaseballLineup/` folder contains the PowerShell module responsible for managing baseball-related functionalities.
 
-- The `baseball/` folder contains the PowerShell module for managing baseball-related functionalities.
+- The `HTMLBaseballLineup/` folder hosts the PowerShell module used to generate HTML output for baseball games.
 
-- The `HTMLBaseball/` folder contains the PowerShell module for generating HTML output related to baseball games.
+The `Tests/` directory includes Pester tests designed to validate the functionality of these modules.
 
-- The `Tests/` directory includes the Pester tests for validating the functionality of the modules.
+Feel free to delve into the individual folders and files to gain insights into the distinct functionalities of each component.
 
-Feel free to explore the individual folders and files to learn more about the specific functionalities of each component.
+This version provides a clear distinction between the project's structure and its description, making it easier for readers to understand the organization of your project and its intended functionalities.
 
 # Baseball Functions
 
