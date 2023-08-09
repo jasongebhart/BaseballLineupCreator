@@ -42,8 +42,8 @@ To use this project, follow these steps:
     1. pitchers.xml
     2. roster.xml
     3. schedule.csv
-4. Use the provided functions and modules to generate lineups and game details.
-5. Modify CSS styles in the `Styles/` directory to customize the appearance of your HTML output.
+4. The `Scripts` directory within `GeneratedLineups/your_team/data` has a helper script (Invoke-NewBaseballLineup.ps1) that will launch the code and generate a lineup for you based off of the content you added to pitchers, roster, and schedule files. 
+5. The lineup web page with be created here: `GeneratedLineups/your_team/``
 
 For more detailed information about each function's usage and parameters, refer to the individual module folders and the respective function documentation.
 
