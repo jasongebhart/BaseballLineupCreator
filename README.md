@@ -68,11 +68,11 @@ By following these steps, you can easily customize and update the lineup to meet
 
 # Configuration Files
 Primary Configuration Files
-    1.  roster.xml
-    2.  pitchers.xml
-    3.  schedule.csv
+1.  roster.xml
+2.  pitchers.xml
+3.  schedule.csv
 
 Optional 
-    1.  dugout.xml
-    2.  positions.xml
-    3.  baseball.config.json
+1.  dugout.xml
+2.  positions.xml
+3.  baseball.config.json
