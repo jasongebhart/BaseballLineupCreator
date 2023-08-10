@@ -75,4 +75,12 @@ Primary Configuration Files
 Optional 
 1.  dugout.xml
 2.  positions.xml
-3.  baseball.config.json
+3.  baseball.config.json: This File contains a description of alf fileding location
+```json
+   {
+        "Name":  "Pitcher",
+        "Value":  1.7,
+        "Frequency":  10,
+        "Number":  1
+    },
+```
