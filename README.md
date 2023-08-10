@@ -27,7 +27,7 @@ This project offers a collection of PowerShell scripts and modules designed to g
 
 - The `HTMLBaseballLineup/` folder hosts the PowerShell module used to generate HTML output for baseball games.
 
-The `Tests/` directory includes Pester tests designed to validate the functionality of these modules.
+- The `Tests/` directory includes Pester tests designed to validate the functionality of these modules.
 
 Feel free to delve into the individual folders and files to gain insights into the distinct functionalities of each component.
 
