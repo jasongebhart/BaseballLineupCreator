@@ -1,4 +1,4 @@
-$global:projectDirectory = "$env:OneDrive\Documents\Baseball\BaseballLineupGenerator"
+$global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
 $global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
 $global:DugoutXML = "$testTeamDir\data\dugout.xml"

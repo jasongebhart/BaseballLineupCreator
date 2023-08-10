@@ -1,13 +1,13 @@
-$global:projectDirectory = "$env:OneDrive\Documents\Baseball\BaseballLineupGenerator"
+$global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
-$global:TeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-$global:Rosterxml = "$TeamDir\data\roster.xml"
-$global:PitcherXML = "$TeamDir\Data\pitchers.xml"
-$global:PositionXML = "$TeamDir\Data\positions.xml"
-$global:schedulecsv= "$TeamDir\Data\schedule.csv"
-$global:dugoutxml = "$TeamDir\Data\dugout.xml"
+$global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
+$global:Rosterxml = "$testTeamDir\data\roster.xml"
+$global:PitcherXML = "$testTeamDir\Data\pitchers.xml"
+$global:PositionXML = "$testTeamDir\Data\positions.xml"
+$global:schedulecsv= "$testTeamDir\Data\schedule.csv"
+$global:dugoutxml = "$testTeamDir\Data\dugout.xml"
 $global:css = "$PSScriptRoot\style.css"
-$global:BaseballPositionsJSON = "$TeamDir\Data\baseball.config.json"
+$global:BaseballPositionsJSON = "$testTeamDir\Data\baseball.config.json"
 
 Describe "Set-BenchOne" {
     BeforeAll {

@@ -1,8 +1,7 @@
 # Assuming you have imported the module or sourced the functions
-$global:projectDirectory = "$env:OneDrive\Documents\Baseball\BaseballLineupGenerator"
+$global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
 $global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-
 $BaseballPositionsJSON = "$testTeamDir\data\baseball.config.json"
 $BaseballConfig = Get-BaseballConfig -Baseballconfig $BaseballPositionsJSON -verbose
 Describe "baseball module tests" {
