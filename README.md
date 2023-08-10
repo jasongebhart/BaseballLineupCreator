@@ -66,4 +66,13 @@ There might be situations where you need to make adjustments to a generated line
 
 By following these steps, you can easily customize and update the lineup to meet your specific needs. Experiment and make adjustments as necessary to create the desired lineup configuration.
 
+# Configuration Files
+Primary Configuration Files
+    1.  roster.xml
+    2.  pitchers.xml
+    3.  schedule.csv
 
+Optional 
+    1.  dugout.xml
+    2.  positions.xml
+    3.  baseball.config.json
