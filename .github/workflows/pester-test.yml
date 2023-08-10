@@ -14,4 +14,7 @@ jobs:
       - name: Perform a Pester test from the Tests.ps1 file
         shell: pwsh
         run: |
-          Invoke-Pester Unit.Tests.ps1 -Passthru
+          $testFiles = Get-ChildItem -Path tests -Filter "*.Tests.ps1" -File
+          foreach ($file in $testFiles) {
+            Invoke-Pester -Path $file.FullName -OutputFile "testResults_$($file.BaseName).xml" -OutputFormat NUnitXml
+          }
