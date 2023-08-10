@@ -75,7 +75,7 @@ Primary Configuration Files
 Optional 
 1.  dugout.xml
 2.  positions.xml
-```json
+```xml
 <team name="Year_Season_TeamName_Sample" friendlyname="Sample Name">
 <positions>
   <assignment>
