@@ -75,7 +75,7 @@ Primary Configuration Files
 Optional 
 1.  dugout.xml
 2.  positions.xml
-3.  baseball.config.json: This File contains a description of alf fileding location
+3.  baseball.config.json: This file contains a description of all of fielding locations. The value is used to weight the alogrythm. Frequency is not used at this time. 
 ```json
    {
         "Name":  "Pitcher",
