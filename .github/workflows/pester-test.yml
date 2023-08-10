@@ -19,6 +19,18 @@ jobs:
         shell: pwsh
         run: |
           Invoke-Pester -Path Get-Dugout.Tests.ps1 -OutputFile "testResults_Get-Dugout.xml" -OutputFormat NUnitXml -PassThru
+      - name: Run Pester tests - Get-PitcherOfInning
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path Get-PitcherOfInning.Tests.ps1 -OutputFile "testResults_Get-PitcherOfInning.Tests.xml" -OutputFormat NUnitXml -PassThru
+      - name: Run Pester tests - Get-Pitchers
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path Get-Pitchers.Tests.ps1 -OutputFile "testResults_Get-Pitchers.xml" -OutputFormat NUnitXml -PassThru
+      - name: Run Pester tests - Get-Positions
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path Get-Positions.Tests.ps1 -OutputFile "testResults_Get-Positions.xml" -OutputFormat NUnitXml -PassThru
       - name: Run Pester tests - Get-BaseballConfig
         shell: pwsh
         run: |

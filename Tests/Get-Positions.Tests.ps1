@@ -1,7 +1,6 @@
 $global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
-$global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-$global:PositionsXML = "$testTeamDir\data\positions.xml"
+$global:PositionsXML = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample\Data\positions.xml"
 Describe "Positions XML Content Validation" {
     BeforeAll {
         $global:xmlPositions = Select-Xml -Path $PositionsXML -XPath '//team'

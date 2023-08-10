@@ -1,7 +1,6 @@
 $global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
-$global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-$global:PitcherXML = "$testTeamDir\data\pitchers.xml"
+$global:PitcherXML = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample\Data\data\pitchers.xml"
 
 Describe "Get-PitcherOfInning" {
     BeforeAll {
