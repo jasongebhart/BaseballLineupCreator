@@ -43,7 +43,7 @@ Import-Module -Name "$ScriptRoot\..\Modules\BaseballLineup" -Verbose -Global -Fo
 Import-Module -Name "$ScriptRoot\..\Modules\HTMLBaseballLineup" -Verbose -Global -Force -ErrorAction Stop
 
 If (-not($TeamDir)){
-    $TeamDir = "$(Split-Path $ScriptRoot -Parent)\Year_Season_TeamName_Sample"
+    $TeamDir = "$(Split-Path $ScriptRoot -Parent)\GeneratedLineups\Year_Season_TeamName_Sample"
     Write-Verbose -Message "[$($MyInvocation.MyCommand)] - team $TeamDir" 
 }
 
