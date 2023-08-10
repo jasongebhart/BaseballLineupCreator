@@ -35,6 +35,14 @@ jobs:
         shell: pwsh
         run: |
           Invoke-Pester -Path Get-BaseballConfig.Tests.ps1 -OutputFile "testResults_Get-BaseballConfig.xml" -verbose -OutputFormat NUnitXml -Passthru
+      - name: Run Pester tests - Get-GameInfoFromCSV
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path Get-GameInfoFromCSV.Tests.ps1 -OutputFile "testResults_Get-GameInfoFromCSV.xml" -verbose -OutputFormat NUnitXml -Passthru
+      - name: Run Pester tests - Get-GameInfoFromCSV
+        shell: pwsh
+        run: |
+          Invoke-Pester -Path Get-GameInfoFromCSV.Tests.ps1 -OutputFile "testResults_Get-GameInfoFromCSV.xml" -verbose -OutputFormat NUnitXml -Passthru
 
       # Add more run entries for other test scripts
 
