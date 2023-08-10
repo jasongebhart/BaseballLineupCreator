@@ -86,7 +86,7 @@ Optional
 </positions>
 ```
 4.  baseball.config.json
-This file contains a description of all of fielding locations. The value is used to weight the algorithm. Frequency is not used at this time and number refers to the traditional positions by number in baseball like shortstop is equalt to 6.
+This file contains a description of all of fielding locations. The value is used to weight the algorithm. Frequency is not used at this time and number refers to the traditional positions by number in baseball like shortstop is equal to 6.
 ```json
    {
         "Name":  "Pitcher",
