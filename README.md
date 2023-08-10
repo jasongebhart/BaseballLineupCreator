@@ -75,7 +75,7 @@ Primary Configuration Files
 Optional 
 1.  dugout.xml
 2.  positions.xml
-3.  baseball.config.json: This file contains a description of all of fielding locations. The value is used to weight the alogrythm. Frequency is not used at this time. 
+3.  baseball.config.json: This file contains a description of all of fielding locations. The value is used to weight the algorithm. Frequency is not used at this time and number refers to the traditional positions by number in baseball like shortstop is equalt to 6.
 ```json
    {
         "Name":  "Pitcher",
