@@ -1,7 +1,7 @@
 $global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
 $global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-$global:Rosterxml = "$testTeamDir\data\roster.xml"
+$global:Rosterxml = "$testTeamDir\Data\roster.xml"
 $global:PitcherXML = "$testTeamDir\Data\pitchers.xml"
 $global:PositionXML = "$testTeamDir\Data\positions.xml"
 $global:schedulecsv= "$testTeamDir\Data\schedule.csv"
