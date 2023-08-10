@@ -69,7 +69,19 @@ By following these steps, you can easily customize and update the lineup to meet
 # Configuration Files
 Primary Configuration Files
 1.  roster.xml
-2.  pitchers.xml
+   ```xml
+<team name="Year_Season_TeamName_Sample" friendlyname="Sample Name">
+<members>
+    <member>
+        <Name>Jack</Name>
+        <Available>yes</Available>
+        <Jersey>7</Jersey>
+        <Batting>1</Batting>
+        <Fielding></Fielding>
+    </member>
+</members>
+```
+3.  pitchers.xml
    ```xml
 <pitchers>
      <pitcher>
