@@ -18,7 +18,7 @@ jobs:
       - name: Run Pester tests - Get-BaseballConfig
         shell: pwsh
         run: |
-          Invoke-Pester -Path tests/Get-BaseballConfig.Tests.ps1
+          Invoke-Pester -Path tests/Get-BaseballConfig.Tests.ps1 -OutputFile "testResults_Get-BaseballConfig.xml" -OutputFormat NUnitXml
       - name: Run Pester tests - Get-Dugout
         shell: pwsh
         run: Invoke-Pester -Path tests/Get-Dugout.Tests.ps1 -OutputFile "testResults_Get-Dugout.xml" -OutputFormat NUnitXml
@@ -26,7 +26,7 @@ jobs:
       # Add more run entries for other test scripts
 
       - name: Archive test results
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: test-results
           path: |
