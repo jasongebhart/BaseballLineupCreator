@@ -1,24 +1,17 @@
-name: Run Pester Tests
-
-on:
-  push:
-    branches:
-      - main
+name: Test PowerShell on Ubuntu
+on: push
 
 jobs:
-  test:
+  pester-test:
+    name: Pester test
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up PowerShell
-        uses: actions/setup-powershell@v2
-        with:
-          powershell-version: '7'
-
-      - name: Install Pester
-        run: Install-Module -Name Pester -Force -SkipPublisherCheck
-
-      - name: Run Pester Tests
-        run: Invoke-Pester -Path ./tests -OutputFile testResults.xml -OutputFormat NUnitXml
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Perform a Pester test from the command-line
+        shell: pwsh
+        run: Test-Path resultsfile.log | Should -Be $true
+      - name: Perform a Pester test from the Tests.ps1 file
+        shell: pwsh
+        run: |
+          Invoke-Pester Unit.Tests.ps1 -Passthru
