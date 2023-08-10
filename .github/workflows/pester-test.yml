@@ -18,7 +18,7 @@ jobs:
       - name: Run Pester tests - Get-Dugout
         shell: pwsh
         run: |
-          Invoke-Pester -Path Get-Dugout.Tests.ps1 -OutputFile "testResults_Get-Dugout.xml" -OutputFormat NUnitXml
+          Invoke-Pester -Path Get-Dugout.Tests.ps1 -OutputFile "testResults_Get-Dugout.xml" -OutputFormat NUnitXml -PassThru
       - name: Run Pester tests - Get-BaseballConfig
         shell: pwsh
         run: |
