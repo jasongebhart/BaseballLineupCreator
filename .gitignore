@@ -1,2 +1,5 @@
 Modules/BaseballLineup/archive/
 Modules/HTMLBaseballLineup/archive/
+# Ignore all files in the 'logs' folder
+/GeneratedLineups/Year_Season_TeamName_Sampl/*
+
