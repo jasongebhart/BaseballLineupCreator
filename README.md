@@ -74,7 +74,20 @@ Primary Configuration Files
 
 Optional 
 1.  dugout.xml
-2.  positions.xml
+   ```xml
+<dugout> 
+<jobs>
+    <ThirdBaseCoach>Jack</ThirdBaseCoach>
+    <FirstBaseCoach>John</FirstBaseCoach>
+    <PitchCounterOne>Sue</PitchCounterOne>
+    <PitchCounterTwo>Sam</PitchCounterTwo>
+    <LineupCoach>Ted</LineupCoach>
+    <BallsStrikesOutsCoach>Olivia</BallsStrikesOutsCoach>
+    <ScoreKeeper>Sara</ScoreKeeper>
+</jobs>
+</dugout>
+```
+3.  positions.xml
 ```xml
 <team name="Year_Season_TeamName_Sample" friendlyname="Sample Name">
 <positions>
