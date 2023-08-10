@@ -34,7 +34,7 @@ jobs:
       - name: Run Pester tests - Get-BaseballConfig
         shell: pwsh
         run: |
-          Invoke-Pester -Path Get-BaseballConfig.Tests.ps1 -OutputFile "testResults_Get-BaseballConfig.xml" -OutputFormat NUnitXml -Passthru
+          Invoke-Pester -Path Get-BaseballConfig.Tests.ps1 -OutputFile "testResults_Get-BaseballConfig.xml" -verbose -OutputFormat NUnitXml -Passthru
 
       # Add more run entries for other test scripts
 
