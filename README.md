@@ -77,6 +77,7 @@ Primary Configuration Files
         <Inning>1</Inning>
         <Position>Pitcher</Position>
     </pitcher>
+</pitchers>
 ```
 4.  schedule.csv
 
