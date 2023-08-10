@@ -1,8 +1,8 @@
 # Assuming you have imported the module or sourced the functions
 $global:projectDirectory = Join-Path $PSScriptRoot "..\"
 Import-Module -Name "$projectDirectory\Modules\BaseballLineup" -verbose
-$global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
-$BaseballConfig = Get-BaseballConfig -Baseballconfig "$testTeamDir\data\baseball.config.json" -verbose
+#$global:testTeamDir = "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample"
+$BaseballConfig = Get-BaseballConfig -Baseballconfig "$projectDirectory\GeneratedLineups\Year_Season_TeamName_Sample\data\baseball.config.json" -verbose
 Describe "baseball module tests" {
 
     # Test Get-BaseballConfig function
