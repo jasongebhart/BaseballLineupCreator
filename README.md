@@ -79,8 +79,13 @@ Primary Configuration Files
     </pitcher>
 </pitchers>
 ```
-4.  schedule.csv
-
+3.  schedule.csv
+   ```csv
+Date,Day,Start Time,End Time,Location,Home,Visitor
+09/11/2022,Sunday,11:30 AM,2:30 PM,The Yard,Sample Name, Gold
+11/06/2022,Sunday,11:30 AM,2:30 PM,Field Of Dreams,Cardinal ,Sample Name
+11/05/2023,Sunday,11:30 AM,2:30 PM,The Yard,Sample Name, Black
+```
 Optional 
 1.  dugout.xml
    ```xml
