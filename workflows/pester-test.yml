@@ -1,0 +1,24 @@
+name: Run Pester Tests
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up PowerShell
+        uses: actions/setup-powershell@v2
+        with:
+          powershell-version: '7'
+
+      - name: Install Pester
+        run: Install-Module -Name Pester -Force -SkipPublisherCheck
+
+      - name: Run Pester Tests
+        run: Invoke-Pester -Path ./tests -OutputFile testResults.xml -OutputFormat NUnitXml
