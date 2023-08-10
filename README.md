@@ -38,7 +38,7 @@ This project was designed for youth baseball. Therefore, the total number of inn
 
 To use this project, follow these steps:
 
-1. Select Code > Download Zip. This will download the file to your machine. Expand the project to your location of choice. Alterrnatively, clone the repository to your local machine.
+1. Navigate to the "Code" dropdown and choose "Download ZIP." This action will initiate the download of the file to your computer. Extract the project to your preferred location. Alternatively, you can clone the repository directly onto your local machine.
 2. Copy the folder `GeneratedLineups/Year_Season_TeamName/` to `GeneratedLineups/your_team/`
 3. Customize the data files in the `GeneratedLineups/your_team/data` directory for your specific needs.
     1. pitchers.xml
