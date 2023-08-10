@@ -31,6 +31,9 @@ The `Tests/` directory includes Pester tests designed to validate the functional
 
 Feel free to delve into the individual folders and files to gain insights into the distinct functionalities of each component.
 
+## Limitations
+This project was designed for youth baseball. Therefore the total number of innings is six. The script will notcreate more than 6 innings. 
+
 ## Getting Started
 
 To use this project, follow these steps:
