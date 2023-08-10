@@ -87,7 +87,7 @@ Optional
 </jobs>
 </dugout>
 ```
-3.  positions.xml
+2.  positions.xml
 ```xml
 <team name="Year_Season_TeamName_Sample" friendlyname="Sample Name">
 <positions>
@@ -98,7 +98,7 @@ Optional
   </assignment>  
 </positions>
 ```
-4.  baseball.config.json
+3.  baseball.config.json
 This file contains a description of all of fielding locations. The value is used to weight the algorithm. Frequency is not used at this time and number refers to the traditional positions by number in baseball like shortstop is equal to 6.
 ```json
    {
