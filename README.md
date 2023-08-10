@@ -70,7 +70,15 @@ By following these steps, you can easily customize and update the lineup to meet
 Primary Configuration Files
 1.  roster.xml
 2.  pitchers.xml
-3.  schedule.csv
+   ```xml
+<pitchers>
+     <pitcher>
+        <Name>Jack</Name>
+        <Inning>1</Inning>
+        <Position>Pitcher</Position>
+    </pitcher>
+```
+4.  schedule.csv
 
 Optional 
 1.  dugout.xml
