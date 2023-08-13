@@ -67,7 +67,7 @@ By following these steps, you can easily customize and update the lineup to meet
 
 **Sample Lineup**
 
-![Sample Lineup](images\screenshots\sampleLineup.png)
+![Sample Lineup](images/screenshots/sampleLineup.png)
 
 # Configuration Files
 Primary Configuration Files
