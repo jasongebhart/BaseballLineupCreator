@@ -65,6 +65,10 @@ There might be situations where you need to make adjustments to a generated line
 
 By following these steps, you can easily customize and update the lineup to meet your specific needs. Experiment and make adjustments as necessary to create the desired lineup configuration.
 
+**Sample Lineup**
+
+![Sample Lineup](images\screenshots\sampleLineup.png)
+
 # Configuration Files
 Primary Configuration Files
 1.  roster.xml
