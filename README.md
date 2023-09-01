@@ -49,7 +49,6 @@ To use this project, follow these steps:
 
 For more detailed information about each function's usage and parameters, refer to the individual module folders and the respective function documentation.
 
-Your explanation is clear and concise, but you could provide a bit more context and guidance. Here's a slightly expanded version with additional information:
 
 **Modifying the Lineup**
 
